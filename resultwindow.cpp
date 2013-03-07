@@ -15,7 +15,10 @@ ResultWindow::ResultWindow(int words, int time):
     connect(ui->closeButton, SIGNAL(clicked()), this, SLOT(close())); // подключение closeButton к слоту закрытия окна
     ui->wordCount->setText(QString::number(words)); // отображения количества слов в тексте
     ui->timeCount->setText(QString::number(time)+" сек"); // отображение затраченного времени
-    ui->readingSpeed->setText(QString::number(words/time)+" сл/сек"); // отображение скорости чтения
+    if (time != 0)
+        ui->readingSpeed->setText(QString::number(words/time)+" сл/сек"); // отображение скорости чтения
+    else
+        ui->readingSpeed->setText(QString::number(0)); // защита от вылета, если тест завершается сразу
 }
 
 ResultWindow::~ResultWindow()
