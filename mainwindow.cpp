@@ -46,7 +46,7 @@ void MainWindow::keyReleaseEvent(QKeyEvent *event) // обработчик со�
 
 void MainWindow::Open() // слот открытия файла
 {
-    QString fname = QFileDialog::getOpenFileName(this); // вызов диалога открытия файла
+    QString fname = QFileDialog::getOpenFileName(this, "title", "text", "Текстовые файлы(*.txt)"); // вызов диалога открытия файла
     QFile file(fname); // инициализация объекта-файла по имени, возвращенному диалогом открытия
     file.open(QFile::ReadOnly | QFile::Text); // открытие файла для чтения, как текст
     QTextStream ReadFile(&file); // инициализация текстового потока
