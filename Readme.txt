@@ -29,10 +29,10 @@ Language: C++ and Qt libs
 Source scheme:
 	main.cpp - source file with main() function
 	mainwindow.h - main window class header
-	mainwindow.cpp - main window class implemention
+	mainwindow.cpp - main window class implementation
 	mainwindow.ui - main window form
 	resultwindow.h - result window class header
-	resultwindow.cpp - result window class implemention
+	resultwindow.cpp - result window class implementation
 	resultwindow.ui - result window form
 	Reader.pro - Qt-project file
 	resource.rc - Resource file (for icon to work) :)
