@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>infoWindow</class>
+ <widget class="QWidget" name="infoWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>315</width>
+    <height>213</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>О программе</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>311</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Reading Speed&lt;/span&gt;&lt;br/&gt;Программа для проверки скорости чтения у детей.&lt;br/&gt;Автор: Антон Константинов&lt;br/&gt;МБОУ &amp;quot;СОШ №6&amp;quot; города Выборга.&lt;br/&gt;С предложениями и пожеланиями &lt;br/&gt;обращаться по электронному адресу: &lt;br/&gt;&lt;a href=&quot;mailto:falceeffected@gmail.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;falceeffected@gmail.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;Программа распространяется по лицензии LGPL,&lt;br/&gt;все исходные коды доступны в репозитории проекта. &lt;br/&gt;&lt;a href=&quot;http://github.com/falceeffect/ReadingSpeed&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Репозиторий проекта на GitHub&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>170</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Закрыть</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

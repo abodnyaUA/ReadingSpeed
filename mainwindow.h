@@ -10,6 +10,7 @@
 #include <ctime>
 #include <QFileDialog>
 #include <resultwindow.h> // заголовок класса окна для вывода результатов
+#include <infowindow.h>
 #include <QKeyEvent>
 
 namespace Ui {
@@ -26,6 +27,7 @@ public:
 
 private slots:
     // прототипы слотов класса
+    void Info();
     void Open(); // загрузка файла
     void on_fontComboBox_currentFontChanged(const QFont &f); // изменение шрифта
     void UpdateTimer(); // обновление таймера в главном окне

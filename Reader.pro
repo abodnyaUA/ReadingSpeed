@@ -14,14 +14,20 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    resultwindow.cpp
+    resultwindow.cpp \
+    infowindow.cpp
 
 HEADERS  += mainwindow.h \
-    resultwindow.h
+    resultwindow.h \
+    infowindow.h
 
 FORMS    += mainwindow.ui \
-    resultwindow.ui
+    resultwindow.ui \
+    infowindow.ui
 
-RC_FILE = resource.rc
+RC_FILE = icon.rc
 
 QMAKE_LFLAGS += -static-libgcc
+
+RESOURCES += \
+    Reader.qrc

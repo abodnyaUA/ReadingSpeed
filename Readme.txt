@@ -1,7 +1,5 @@
 ﻿//////Reading Speed
 
-///Русский:
-
 Программа для проверки скорости чтения у детей.
 
 Язык: С++ и Qt библиотеки
@@ -13,31 +11,14 @@
 	resultwindow.h - заголовок класса окна результатов
 	resultwindow.cpp - реализация класса окна результатов
 	resultwindow.ui - форма окна результатов
+	infowindow.h - заголовок класса окна "о программе"
+	infowindow.cpp - реализация класса окна "о программе"
+	infowindow.ui - форма окна "о программе"
 	Reader.pro - файл Qt-проекта
-	resource.rc - файл ресурсов, для иконки :)
+	resource.rc, icon.icon - иконка exe-файла
+	infoButton.png, openButton.png, Reader.qrc - иконки кнопок
 	Readme.txt - этот файл
 
 Программа распространяется абсолютно свободно, вы вольны использовать её, как вам угодно.
 Конструктивная критика кода приветствуется.
 С уважением, falceeffect.
-
-///English:
-
-Reading speed testing application
-
-Language: C++ and Qt libs
-Source scheme:
-	main.cpp - source file with main() function
-	mainwindow.h - main window class header
-	mainwindow.cpp - main window class implementation
-	mainwindow.ui - main window form
-	resultwindow.h - result window class header
-	resultwindow.cpp - result window class implementation
-	resultwindow.ui - result window form
-	Reader.pro - Qt-project file
-	resource.rc - Resource file (for icon to work) :)
-	Readme.txt - this file
-
-Application is distributed totaly free, you can use it as you wish.
-Actional feedback is always welcome, feel free to feedback.
-Best regards, falceeffect.

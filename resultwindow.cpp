@@ -16,7 +16,7 @@ ResultWindow::ResultWindow(int words, int time):
     ui->wordCount->setText(QString::number(words)); // отображения количества слов в тексте
     ui->timeCount->setText(QString::number(time)+" сек"); // отображение затраченного времени
     if (time != 0)
-        ui->readingSpeed->setText(QString::number(words/time)+" сл/сек"); // отображение скорости чтения
+        ui->readingSpeed->setText(QString::number(words/time*60)+" сл/мин"); // отображение скорости чтения
     else
         ui->readingSpeed->setText(QString::number(0)); // защита от вылета, если тест завершается сразу
 }
