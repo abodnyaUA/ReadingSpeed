@@ -17,6 +17,8 @@
 	Reader.pro - файл Qt-проекта
 	resource.rc, icon.icon - иконка exe-файла
 	infoButton.png, openButton.png, Reader.qrc - иконки кнопок
+	ReadingSpeed.exe - исполняемый файл для Windows
+	ReadingSpeed - исполняемый файла для GNU Linux
 	Readme.txt - этот файл
 
 Программа распространяется абсолютно свободно, вы вольны использовать её, как вам угодно.

@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    QTextCodec::setCodecForCStrings(QTextCodec::codecForName("utf8"));
     connect(&timer, SIGNAL(timeout()), this, SLOT(UpdateTimer())); // подключение слота обновления таймера к сигналу таймера
     connect(ui->openButton, SIGNAL(clicked()), this, SLOT(Open())); // подключение openButton к слоту открытия файла
     connect(ui->infoButton, SIGNAL(clicked()), this, SLOT(Info()));

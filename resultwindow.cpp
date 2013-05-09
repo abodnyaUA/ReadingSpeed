@@ -6,7 +6,7 @@ ResultWindow::ResultWindow(int words, int time):
     ui(new Ui::ResultWindow)
 {
     ui->setupUi(this);
-    // запрещение отображения лишних системных кнопок
+    // запрет отображения лишних системных кнопок
     setWindowFlags(Qt::Widget | Qt::CustomizeWindowHint);
     setWindowFlags(Qt::Widget | Qt::WindowTitleHint);
     setWindowFlags(Qt::Widget | Qt::WindowCloseButtonHint);
