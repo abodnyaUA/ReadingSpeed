@@ -6,7 +6,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QTextCodec::setCodecForCStrings(QTextCodec::codecForName("utf8"));
     connect(&timer, SIGNAL(timeout()), this, SLOT(UpdateTimer())); // подключение слота обновления таймера к сигналу таймера
     connect(ui->openButton, SIGNAL(clicked()), this, SLOT(Open())); // подключение openButton к слоту открытия файла
     connect(ui->infoButton, SIGNAL(clicked()), this, SLOT(Info()));
@@ -73,9 +72,9 @@ void MainWindow::on_fontComboBox_currentFontChanged(const QFont &f) // изме�
 
 void MainWindow::on_spinBox_valueChanged(const QString &arg1) // изменение размера шрифта
 {
-    QFont font = ui->textBrowser->currentFont(); // инициализация объекта-шрифта равного текущему шрифту textBrowser
-    font.setPointSize(arg1.toInt()); // изменение его размера в соответствии с текущим значением spinBox
-    ui->textBrowser->setFont(font); // установка шрифта для textBrowser
+    QFont font = ui->fontComboBox->currentFont();
+    font.setPointSize(arg1.toInt());
+    ui->textBrowser->setFont(font);
 }
 
 void MainWindow::UpdateTimer() // обновление таймера

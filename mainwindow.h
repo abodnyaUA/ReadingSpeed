@@ -4,6 +4,7 @@
 // подключение необходимых библиотек
 #include <QWidget>
 #include <QTimer>
+#include <QTextCodec>
 #include <QFont>
 #include <QTextStream>
 #include <QFile>

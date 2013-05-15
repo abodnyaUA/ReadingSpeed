@@ -17,7 +17,7 @@
    <iconset>
     <normaloff>:/reader/icon.ico</normaloff>:/reader/icon.ico</iconset>
   </property>
-  <widget class="QTextEdit" name="textBrowser">
+  <widget class="QTextBrowser" name="textBrowser">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -25,6 +25,18 @@
      <width>821</width>
      <height>491</height>
     </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="tabChangesFocus">
+    <bool>false</bool>
    </property>
    <property name="readOnly">
     <bool>true</bool>
@@ -95,6 +107,9 @@
       <width>135</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
     </property>
     <property name="editable">
      <bool>false</bool>
@@ -187,6 +202,9 @@
      <width>211</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
    </property>
    <property name="autoFillBackground">
     <bool>false</bool>
